@@ -4,6 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@EnableConfigurationProperties
+@PropertySource("classpath:config.properties")
 public class JpaApplication {
 
 	public static void main(String[] args) {
